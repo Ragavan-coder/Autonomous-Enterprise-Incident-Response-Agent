@@ -1,0 +1,18 @@
+[
+    {
+        "id": "test-1",
+        "title": "Checkout error rate increased to 18%",
+        "description": "Checkout error rate increased from 1.2% to 18%",
+        "service": "checkout-service",
+        "expected_root_cause": "Database connection pool exhaustion",
+        "expected_tools": ["check_service_health", "search_logs", "get_metrics"]
+    },
+    {
+        "id": "test-2",
+        "title": "Payment service latency increased",
+        "description": "Payment service latency increased by 4x",
+        "service": "payment-service",
+        "expected_root_cause": "Deployment v4.8.2 issue",
+        "expected_tools": ["check_service_health", "get_recent_deployments"]
+    }
+]
